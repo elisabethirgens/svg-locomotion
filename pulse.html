@@ -1,0 +1,26 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>SVG Locomotion</title>
+  <style>
+    body { background-color: slategray; }
+    @keyframes pulse {
+      0%, 100% { fill: rgba(255,255,255,0.6); }
+      50% { fill: rgba(255,255,255,0.05); }
+    }
+    .one { animation: pulse 5s infinite; }
+    .two { animation: pulse 7s infinite; }
+  </style>
+</head>
+<body>
+  <svg viewBox="0 0 1000 500" xmlns="http://www.w3.org/2000/svg">
+    <circle class="one" cx="200" cy="200" r="60"/>
+    <circle class="one" cx="200" cy="200" r="80"/>
+    <circle class="one" cx="200" cy="200" r="100"/>
+    <circle class="two" cx="800" cy="400" r="20"/>
+    <circle class="two" cx="800" cy="400" r="30"/>
+    <circle class="two" cx="800" cy="400" r="40"/>
+  </svg>
+</body>
+</html>

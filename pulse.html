@@ -11,6 +11,18 @@
     }
     .one { animation: pulse 5s infinite; }
     .two { animation: pulse 7s infinite; }
+
+    .three {
+      fill: rgba(255,255,255,0.2);
+      transition: transform 2s ease-in-out;
+    }
+    .three:hover {
+      fill: rgba(255,255,255,0.4);
+      transform-origin: center;
+      transform: scale(2);
+      transform: translate(0%, 55%);
+    }
+
   </style>
 </head>
 <body>
@@ -21,6 +33,10 @@
     <circle class="two" cx="800" cy="400" r="20"/>
     <circle class="two" cx="800" cy="400" r="30"/>
     <circle class="two" cx="800" cy="400" r="40"/>
+    <circle class="three" cx="500" cy="100" r="50"/>
+    <circle class="three" cx="550" cy="50" r="40"/>
+    <circle class="three" cx="400" cy="150" r="20"/>
+    <circle class="three" cx="700" cy="180" r="30"/>
   </svg>
 </body>
 </html>
